@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\25300730\\source\\repos\\WinFormsApp2\\frmNotebook\\frmNotebook.csproj": {}
+    "\\\\edu.local\\public\\studenthomes\\25300730\\Desktop\\qwe\\frmNotebook\\frmNotebook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\25300730\\source\\repos\\WinFormsApp2\\frmNotebook\\frmNotebook.csproj": {
+    "\\\\edu.local\\public\\studenthomes\\25300730\\Desktop\\qwe\\frmNotebook\\frmNotebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\25300730\\source\\repos\\WinFormsApp2\\frmNotebook\\frmNotebook.csproj",
+        "projectUniqueName": "\\\\edu.local\\public\\studenthomes\\25300730\\Desktop\\qwe\\frmNotebook\\frmNotebook.csproj",
         "projectName": "frmNotebook",
-        "projectPath": "C:\\Users\\25300730\\source\\repos\\WinFormsApp2\\frmNotebook\\frmNotebook.csproj",
+        "projectPath": "\\\\edu.local\\public\\studenthomes\\25300730\\Desktop\\qwe\\frmNotebook\\frmNotebook.csproj",
         "packagesPath": "C:\\Users\\25300730\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\25300730\\source\\repos\\WinFormsApp2\\frmNotebook\\obj\\",
+        "outputPath": "\\\\edu.local\\public\\studenthomes\\25300730\\Desktop\\qwe\\frmNotebook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

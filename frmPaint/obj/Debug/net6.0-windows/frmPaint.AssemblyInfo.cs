@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("frmPaint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+852e785fad55e6e83b381fa81955cd0f4c5ee336")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+961af26b259b6c6ce1ca4e0ac674178b803d8c90")]
 [assembly: System.Reflection.AssemblyProductAttribute("frmPaint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("frmPaint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
