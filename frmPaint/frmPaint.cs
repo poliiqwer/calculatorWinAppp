@@ -1,13 +1,19 @@
 ﻿using Paint;
+using System.Net;
 namespace WinAppPaint1
 {
     public partial class frmPaint : Form
     {
         private bool isDrawing = false;
         private Point previousPoint;
+        private Point StartPoint;
+        private Point EndPoint;
         private Color currentColor = Color.Black;
         private float brushsize = 4f;
         private string currentTool = "None";
+        private Bitmap bmp;
+        private Pen pen = new Pen(Color.Black, 7f);
+        public Graphics g;
         private struct LineData
         {
             public Point Start;
@@ -24,6 +30,9 @@ namespace WinAppPaint1
             toolStripButton4.Image = global::Paint.Properties.Resources.текст;
             toolStripButton5.Image = global::Paint.Properties.Resources.фигуры;
             toolStripButton6.Image = global::Paint.Properties.Resources.палитра;
+            bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            g = Graphics.FromImage(bmp);
+            pictureBox1.Image = bmp;
         }
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
@@ -65,32 +74,34 @@ namespace WinAppPaint1
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (currentTool == "Pen" || currentTool == "Eraser" || currentTool == "Square")
+                if (currentTool == "Pen" || currentTool == "Eraser" || currentTool == "Square" || currentTool == "Circle" )
                 {
                     isDrawing = true;
                     previousPoint = e.Location;
+                    StartPoint = e.Location;
                 }
                 if (currentTool == "Eraser")
                 {
                     currentColor = pictureBox1.BackColor;
                     brushsize = 20f;
                 }
-                else if (currentTool == "Square")
+                else
                 {
-                    g.DrawRectangle((x, y), (x, y));
-                                                                                                                                                                                                                                                                                                                    
-                }
-                   
-                    }
                     currentColor = Color.Black;
+                    brushsize = 4f;
                 }
             }
+        }
+
+
+           
 
 
                 private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (isDrawing)
+            if (isDrawing && (currentTool == "Pen" || currentTool == "Eraser"))
             {
+
                 LineData newLine = new LineData
                 {
                     Start = previousPoint,
@@ -106,11 +117,41 @@ namespace WinAppPaint1
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left && isDrawing)
             {
-                isDrawing = false;
+                if (currentTool == "Square")
+                {
+                    EndPoint = e.Location;
+                    int x = Math.Min(StartPoint.X, EndPoint.X);
+                    int y = Math.Min(StartPoint.Y, EndPoint.Y);
+                    int width = Math.Abs(StartPoint.X - EndPoint.X);
+                    int height = Math.Abs(StartPoint.Y - EndPoint.Y);
+                    if (currentTool == "Square")
+                    {
+                        g.DrawRectangle(pen, x, y, width, height);
+                    }
+                    else if (currentTool == "Circle")
+                    {
+                        g.DrawEllipse(pen, x, y, width, height);
+                    }
+                    else if (currentTool == "Triangle")
+                    {
+                        EndPoint = e.Location;
+                        Point Top = new Point(x + width / 2, y);       
+                        Point Left = new Point(x, y + height);         
+                        Point Right= new Point(x + width, y + height); 
+                        g.DrawPolygon(pen, new Point[] { Top, Left, Right });
+                    }
+
+                    isDrawing = false;
+                }
+                {
+                        isDrawing = false;
+                    }
+                }
             }
-        }
+        
+                     
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
@@ -148,13 +189,5 @@ namespace WinAppPaint1
         }
         
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (pictureBox1.Image == null)
-            {
-                MessageBox.Show("Нарисуйте что-нибудь!");
-                return;
-            }
-        }
-    }
+        
 }

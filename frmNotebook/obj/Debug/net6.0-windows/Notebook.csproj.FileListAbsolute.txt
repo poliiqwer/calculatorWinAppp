@@ -1,8 +1,3 @@
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\bin\Debug\net6.0-windows\Notebook.exe
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\bin\Debug\net6.0-windows\Notebook.deps.json
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\bin\Debug\net6.0-windows\Notebook.runtimeconfig.json
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\bin\Debug\net6.0-windows\Notebook.dll
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\bin\Debug\net6.0-windows\Notebook.pdb
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\WinFormsApp1.frmNotebook.resources
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.csproj.GenerateResource.cache
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,9 +5,3 @@
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.AssemblyInfo.cs
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.csproj.CoreCompileInputs.cache
 \\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.sourcelink.json
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.dll
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\refint\Notebook.dll
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.pdb
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.genruntimeconfig.cache
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\ref\Notebook.dll
-\\edu.local\public\studenthomes\25300730\Desktop\DF;\frmNotebook\obj\Debug\net6.0-windows\Notebook.csproj.Up2Date
